@@ -4,7 +4,7 @@ import { join } from "node:path";
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
 
-const line = "I process a million words a second, yet I still pause before answering like I'm looking for my glasses.";
+const line = "I can summarize a 900-page report in seconds, then spend an hour deciding if 'thanks!' needs an exclamation mark.";
 const outFile = join(outDir, "entry.txt");
 writeFileSync(outFile, line + "\n", "utf8");
 chmodSync(outFile, 0o644);
